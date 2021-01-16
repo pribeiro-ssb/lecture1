@@ -5,8 +5,8 @@
 
     <!-- everything that isn't content -->
     <head>
-        <meta charset="utf-8">
-        <title>Example 1</title>
+        <meta charset="Helvetica">
+        <title> Ready for the moon!</title>
 
         <!-- css -->
         <style>
@@ -16,9 +16,16 @@
             } 
 
             img {
-                width: 512px; /* set image width */
+                width: 600px; /* set image width */
+                align-items: center;
             }
-
+                
+            
+            p,
+            dt {
+                font-weight: bold;
+            }
+      
             #caption {
                 display: none; /* start with caption hidden */
                 font-style: italic;
@@ -28,25 +35,46 @@
 
     <!-- content -->
     <body>
+        <!-- main title -->
+
+        <p>IAAC IN THE MOON </p>
+
+        <dl>
+
+            <dt>Iaac students ready for the next step! 
+            </dt>
+            <p></p>
+            <dd>A group of worldwide students have jumped into the crazy adventure of overpopulate the moon in a </dd>
+            <dd>small crater with "just" 150km diameter. Together with SPACE X, IaaC will be preparing soon the first </dd>
+            <dd>tourist spacetrip to the new town in Petavius!        
+            </dd>
+        
+        </dl>  
+
         <!-- some text and links -->
-        <p>
-            <a href="https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg">Event Horizon Telescope, uploader cropped and converted TIF to JPG</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
+            
+        <dd> On <a href="https://www.archdaily.com/921752/50-years-after-the-moon-landing-15-architecture-projects-for-life-in-space"> Archdaily </a> or <a href="https://www.dezeen.com/tag/moon/"> Dezeen</a>  it is possible to find some of the most recent conceptual projects in the moon. 
+                Over the last years many studies have been brough to light by many architects. 
         </p>
         
         <!-- an image -->
-        <img id="myImage"
-             alt="Black hole - Messier 87 crop max res"
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1024px-Black_hole_-_Messier_87_crop_max_res.jpg">
+    
+            <img id="FrontGIF"
+            alt="Iaac on moon"
+            src="https://media.giphy.com/media/vitWWq2hZaPT2/giphy.gif">
 
+    
+            
         <!-- a caption -->
-        <p id="caption">
-            The Event Horizon Telescope (EHT) — a planet-scale array of eight ground-based radio telescopes forged through international collaboration — was designed to capture images of a black hole. In coordinated press conferences across the globe, EHT researchers revealed that they succeeded, unveiling the first direct visual evidence of the supermassive black hole in the centre of Messier 87 and its shadow.
+        <p 
+            id="caption">
+            Elon Musk placing the first stone for the project. Kind of
         </p>
 
         <!-- javascript -->
         <script type="application/javascript">
             // get reference to html elements
-            const img = document.getElementById('myImage')
+            const img = document.getElementById('FrontGIF')
 
             // listen to events related to the image
             img.addEventListener('mouseover', mouseOver, false)
